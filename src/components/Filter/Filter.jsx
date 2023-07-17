@@ -4,14 +4,14 @@ import css from './Filter.module.css'
 export const Filter = ({filter, onFilterChange }) => {
 	return (
 		<>
-			<form className={css.filterForm}>
-				<label>
+			<form className={css.filter}>
+				<label className={css.name}>
 					<span>Find contact by name</span>
 					<input
 						type="text"
 						value={filter}
 						onChange={onFilterChange}
-						className={css.filterInput}
+						className={css.input}
 					/>
 				</label>
 			</form>
